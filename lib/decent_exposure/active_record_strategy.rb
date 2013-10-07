@@ -38,7 +38,7 @@ module DecentExposure
     end
 
     def collection_resource
-      scope.scoped
+      scope.where(nil) #http://stackoverflow.com/questions/18198963/with-rails-4-model-scoped-is-deprecated-but-model-all-cant-replace-it
     end
 
     def id
